@@ -25,9 +25,26 @@ def service_create(request):
     form = ServiceModelForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return redirect('/sevices/')
+        return redirect('/services/')
 
     context = {
         'form': form
     }
     return render(request, 'services/service_create.html', context)
+
+def service_update(request, slug):
+    service = get_object_or_404(Service, slug=slug)
+    form = ServiceModelForm(request.POST or None, instance = service)
+    if form.is_valid():
+        form.save()
+        return redirect('/services/')
+
+    context = {
+        'form': form
+    }
+    return render(request, 'services/service_update.html', context)
+
+def service_delete(request, slug):
+    service = get_object_or_404(Service, slug=slug)
+    service.delete()
+    return redirect('/services/')
