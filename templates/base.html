@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+    {% include "head.html" %}
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+        {% include "header.html" %}
+		<!-- #header end -->
+
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+                {% block content %}
+                {% endblock content %}
+            </div>
+		</section>
+        <!-- #content end -->
+        
+        <!-- Footer
+		============================================= -->
+        {% include "footer.html" %}
+		<!-- #footer end -->
+
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Scripts 
+    ============================================= -->
+    {% include "scripts.html" %}
+
+</body>
+</html>

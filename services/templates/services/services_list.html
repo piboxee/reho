@@ -3,6 +3,10 @@
         <title></title>
     </head>
     <body>
-        {{ all_services }}
+        {% for service in all_services %}
+            <ul>
+                <li>{{ service }}</li>
+            </ul>
+        {% endfor %}
     </body>
 </html>
