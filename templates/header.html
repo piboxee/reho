@@ -22,13 +22,9 @@
 							<li class="current"><a href="index.html"><div>Главная</div></a></li>
 							<li><a href="#"><div>Услуги</div></a>
 								<ul>
-									<li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a></li>
-									<li><a href="widgets.html"><div><i class="icon-gift"></i>Widgets</div></a></li>
-									<li><a href="#"><div><i class="icon-umbrella"></i>Headers</div></a></li>
-									<li><a href="forms.html"><div><i class="icon-wpforms"></i>Forms</div></a></li>
-									<li><a href="side-panel.html"><div><i class="icon-line-layout"></i>Side Panel</div></a></li>
-									<li><a href="mega-menu.html"><div><i class="icon-line-columns"></i>Mega Menu</div></a></li>
-									<li><a href="profile.html"><div><i class="icon-user"></i>User Profile</div></a></li>
+                                    {% for service in all_services %}
+                                        <li><a href="#"><div><i class="icon-settings"></i>{{ service }}</div></a></li>
+                                    {% endfor %}
 								</ul>
 							</li>
 						</ul>

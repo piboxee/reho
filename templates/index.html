@@ -1,8 +1,144 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
+<div
+  class="section parallax dark nobottommargin"
+  style="padding: 100px 0;"
+  data-bottom-top="background-position:0px 300px;"
+  data-top-bottom="background-position:0px -300px;"
+>
+  <div class="heading-block center">
+    <h3>What Clients Say?</h3>
+  </div>
 
-{% block content %}
+  <div
+    class="fslider testimonial testimonial-full"
+    data-animation="fade"
+    data-arrows="false"
+  >
+    <div class="flexslider">
+      <div class="slider-wrap">
+        <div class="slide">
+          <div class="testi-image">
+            <a href="#"
+              ><img src="{% static "images/testimonials/3.jpg" %}" alt="Customer
+              Testimonails"></a
+            >
+          </div>
+          <div class="testi-content">
+            <p>
+              Similique fugit repellendus expedita excepturi iure perferendis
+              provident quia eaque. Repellendus, vero numquam?
+            </p>
+            <div class="testi-meta">
+              Steve Jobs
+              <span>Apple Inc.</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testi-image">
+            <a href="#"
+              ><img src="{% static "images/testimonials/2.jpg" %}" alt="Customer
+              Testimonails"></a
+            >
+          </div>
+          <div class="testi-content">
+            <p>
+              Natus voluptatum enim quod necessitatibus quis expedita harum
+              provident eos obcaecati id culpa corporis molestias.
+            </p>
+            <div class="testi-meta">
+              Collis Ta'eed
+              <span>Envato Inc.</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="testi-image">
+            <a href="#"
+              ><img src="{% static "images/testimonials/1.jpg" %}" alt="Customer
+              Testimonails"></a
+            >
+          </div>
+          <div class="testi-content">
+            <p>
+              Incidunt deleniti blanditiis quas aperiam recusandae consequatur
+              ullam quibusdam cum libero illo rerum!
+            </p>
+            <div class="testi-meta">
+              John Doe
+              <span>XYZ Inc.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container clearfix">
+    <div class="heading-block topmargin-sm center">
+      <h3>Meet Our Team</h3>
+    </div>
 
-HELLO WORLD !!!
+    <div class="row">
+      <div class="col-lg-3 col-md-6 bottommargin">
+        <div class="team">
+          <div class="team-image">
+            <img src="{% static "images/team/3.jpg" %}">
+          </div>
+          <div class="team-desc team-desc-bg">
+            <div class="team-title">
+              <h4>Эдуард</h4>
+              <span>CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 bottommargin">
+        <div class="team">
+          <div class="team-image">
+            <img src="{% static "images/team/2.jpg" %}">
+          </div>
+          <div class="team-desc team-desc-bg">
+            <div class="team-title">
+              <h4>Андрей</h4>
+              <span>Механик</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 bottommargin">
+        <div class="team">
+          <div class="team-image">
+            <img src="{% static "images/team/8.jpg" %}">
+          </div>
+          <div class="team-desc team-desc-bg">
+            <div class="team-title">
+              <h4>Николай</h4>
+              <span>Механик</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 bottommargin">
+        <div class="team">
+          <div class="team-image">
+            <img src="{% static "images/team/4.jpg" %}">
+          </div>
+          <div class="team-desc team-desc-bg">
+            <div class="team-title">
+              <h4>Евгений</h4>
+              <span>Маляр</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock content %}
