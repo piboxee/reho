@@ -44,6 +44,7 @@ def service_update(request, slug):
     }
     return render(request, 'services/service_update.html', context)
 
+
 def service_delete(request, slug):
     service = get_object_or_404(Service, slug=slug)
     service.delete()

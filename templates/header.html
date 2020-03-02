@@ -20,11 +20,12 @@
 
 						<ul>
 							<li class="current"><a href="index.html"><div>Главная</div></a></li>
+							<li><a href="#"><div>HELLO</div></li></a>
 							<li><a href="#"><div>Услуги</div></a>
 								<ul>
-                                    {% for service in all_services %}
-                                        <li><a href="#"><div><i class="icon-settings"></i>{{ service }}</div></a></li>
-                                    {% endfor %}
+								{% for menu_item in menu_items %}
+									<li><a href="#"><div><i class="icon-settings"></i>{{ menu_item }}</div></a></li>
+								{% endfor %}
 								</ul>
 							</li>
 						</ul>
